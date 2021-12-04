@@ -1,73 +1,21 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
+import services from './Services.json' // This data should come from a REST API call
 
 const Dashboard = () => {
-  let services = [
-    {
-      name: "App 123 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 456 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 789 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 011 Test",
-      status: "DOWN",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 121 Test",
-      status: "DOWN",
-      url: "http://localhost:8080/app",
-    }, {
-      name: "App 123 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 456 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 789 Test",
-      status: "UP",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 011 Test",
-      status: "DOWN",
-      url: "http://localhost:8080/app",
-    },
-    {
-      name: "App 121 Test",
-      status: "DOWN",
-      url: "http://localhost:8080/app",
-    },
-  ];
-
-  const [serviceNames, setServiceName] = useState(services);
+  const [serviceData, setServiceName] = useState(services.data);
 
   const onServiceNameChangeHandler = (event) => {
-    let servicesFiltered = services.filter((data) => {
-      if (data.name.toLowerCase().includes(event.target.value.toLowerCase()))
-        return true;
-    });
+    let servicesDataFiltered = services.data
 
-    if (event.target.value.trim() === 0) {
-      setServiceName(services);
-    } else {
-      setServiceName(servicesFiltered);
+    if (event.target.value.trim() != 0) {
+      servicesDataFiltered = services.data.filter((data) => {
+        if (data.name.toLowerCase().includes(event.target.value.toLowerCase()))
+          return true;
+      });
     }
-  };
+    setServiceName(servicesDataFiltered);
+  }
 
   return (
     <div className="table">
@@ -85,7 +33,7 @@ const Dashboard = () => {
             <th>Status</th>
             <th>URL</th>
           </tr>
-          {serviceNames.length === 0 ? (
+          {serviceData.length === 0 ? (
             <tr>
               <td></td>
               <td>No matching services</td>
@@ -93,7 +41,7 @@ const Dashboard = () => {
               <td></td>
             </tr>
           ) : (
-            serviceNames.map((data, index) => (
+            serviceData.map((data, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{data.name}</td>

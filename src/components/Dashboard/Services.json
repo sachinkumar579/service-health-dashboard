@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "name": "App 123 Test",
+            "status": "UP",
+            "url": "http://localhost:8080/app"
+        },
+        {
+            "name": "App 456 Test",
+            "status": "UP",
+            "url": "http://localhost:8080/app"
+        },
+        {
+            "name": "App 789 Test",
+            "status": "UP",
+            "url": "http://localhost:8080/app"
+        },
+        {
+            "name": "App 011 Test",
+            "status": "UP",
+            "url": "http://localhost:8080/app"
+        }
+    ]
+}
