@@ -1,6 +1,6 @@
 table {
   font-family: arial, sans-serif;
-  width: 60%;
+  width: 50%;
   border-radius: 5px;
 }
 
@@ -15,7 +15,7 @@ td {
   font-size: 15px;
 }
 
-.dashboard{
+.dashboard {
   margin: 5px;
 }
 
@@ -44,4 +44,9 @@ td {
   background-color: red;
   border-radius: 50%;
   display: inline-block;
+}
+
+.dashboard-service:hover {
+  cursor: pointer;
+  background-color: rgb(85, 165, 218);
 }

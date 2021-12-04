@@ -1,9 +1,21 @@
 import React, { useState } from "react";
+import AppUsageChart from "../Charts/AppUsageChart";
 import "./Dashboard.css";
 import services from './Services.json' // This data should come from a REST API call
 
 const Dashboard = () => {
   const [serviceData, setServiceName] = useState(services.data);
+  const [displayServiceState,setDisplayServiceState] = useState()
+  
+  const displayChart =(event)=>{ 
+       let serviceData = services.data;
+       serviceData.forEach((item)=>{
+              if(item.name===event.currentTarget.cells[1].textContent){
+                setDisplayServiceState(item);
+              }
+       })
+  }
+
 
   const onServiceNameChangeHandler = (event) => {
     let servicesDataFiltered = services.data
@@ -42,7 +54,7 @@ const Dashboard = () => {
             </tr>
           ) : (
             serviceData.map((data, index) => (
-              <tr key={index}>
+              <tr key={index} className='dashboard-service' onClick={displayChart}>
                 <td>{index + 1}</td>
                 <td>{data.name}</td>
                 <td>
@@ -57,7 +69,9 @@ const Dashboard = () => {
             ))
           )}
         </tbody>
-      </table>
+      </table>{
+       displayServiceState!=null && <AppUsageChart service={displayServiceState}></AppUsageChart> 
+      }
     </div>
   );
 };

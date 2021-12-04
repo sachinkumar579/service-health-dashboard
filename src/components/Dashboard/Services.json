@@ -3,27 +3,152 @@
         {
             "name": "App 123 Test",
             "status": "UP",
-            "url": "http://localhost:8080/app"
-        },
+            "url": "http://localhost:8080/app",
+            "usage" : [{ 
+                "date": "Jan 01 2021", 
+                "price": 105.35 
+            },{ 
+                "date": "Jan 02 2021", 
+                "price": 120 
+            },{ 
+                "date": "Jan 03 2021", 
+                "price": 110.35 
+            },{ 
+                "date": "Jan 04 2021", 
+                "price": 100 
+            },{ 
+                "date": "Jan 05 2021", 
+                "price": 75.35 
+            },{ 
+                "date": "Jan 06 2021", 
+                "price": 130 
+            },{ 
+                "date": "Jan 07 2021", 
+                "price": 80.35 
+            },{ 
+                "date": "Jan 08 2021", 
+                "price": 90 
+            }]
+        },   
         {
             "name": "App 456 Test",
             "status": "UP",
-            "url": "http://localhost:8080/app"
+            "url": "http://localhost:8080/app",
+            "usage" : [{ 
+                "date": "Jan 01 2021", 
+                "price": 10.35 
+            },{ 
+                "date": "Jan 02 2021", 
+                "price": 12 
+            },{ 
+                "date": "Jan 03 2021", 
+                "price": 11.35 
+            },{ 
+                "date": "Jan 04 2021", 
+                "price": 10 
+            },{ 
+                "date": "Jan 05 2021", 
+                "price": 7.35 
+            },{ 
+                "date": "Jan 06 2021", 
+                "price": 10 
+            },{ 
+                "date": "Jan 07 2021", 
+                "price": 8.35 
+            },{ 
+                "date": "Jan 08 2021", 
+                "price": 9 
+            }]
         },
         {
             "name": "App 789 Test",
             "status": "UP",
-            "url": "http://localhost:8080/app"
+            "url": "http://localhost:8080/app",
+            "usage" : [{ 
+                "date": "Jan 01 2021", 
+                "price": 300.35 
+            },{ 
+                "date": "Jan 02 2021", 
+                "price": 320 
+            },{ 
+                "date": "Jan 03 2021", 
+                "price": 400.35 
+            },{ 
+                "date": "Jan 04 2021", 
+                "price": 300 
+            },{ 
+                "date": "Jan 05 2021", 
+                "price": 500 
+            },{ 
+                "date": "Jan 06 2021", 
+                "price": 300 
+            },{ 
+                "date": "Jan 07 2021", 
+                "price": 200 
+            },{ 
+                "date": "Jan 08 2021", 
+                "price": 100 
+            }]
         },
         {
             "name": "App 011 Test",
             "status": "UP",
-            "url": "http://localhost:8080/app"
+            "url": "http://localhost:8080/app",
+            "usage" : [{ 
+                "date": "Jan 01 2021", 
+                "price": 105.35 
+            },{ 
+                "date": "Jan 02 2021", 
+                "price": 120 
+            },{ 
+                "date": "Jan 03 2021", 
+                "price": 110.35 
+            },{ 
+                "date": "Jan 04 2021", 
+                "price": 100 
+            },{ 
+                "date": "Jan 05 2021", 
+                "price": 75.35 
+            },{ 
+                "date": "Jan 06 2021", 
+                "price": 130 
+            },{ 
+                "date": "Jan 07 2021", 
+                "price": 80.35 
+            },{ 
+                "date": "Jan 08 2021", 
+                "price": 90 
+            }]
         },
         {
             "name": "App 012 Test",
             "status": "DOWN",
-            "url": "http://localhost:8080/app"
-        }
+            "url": "http://localhost:8080/app",
+            "usage" : [{ 
+                "date": "Jan 01 2021", 
+                "price": 987 
+            },{ 
+                "date": "Jan 02 2021", 
+                "price": 324 
+            },{ 
+                "date": "Jan 03 2021", 
+                "price": 456 
+            },{ 
+                "date": "Jan 04 2021", 
+                "price": 600 
+            },{ 
+                "date": "Jan 05 2021", 
+                "price": 755 
+            },{ 
+                "date": "Jan 06 2021", 
+                "price": 430 
+            },{ 
+                "date": "Jan 07 2021", 
+                "price": 535 
+            },{ 
+                "date": "Jan 08 2021", 
+                "price": 500 
+            }]
+           }
     ]
 }
