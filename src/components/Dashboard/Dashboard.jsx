@@ -74,7 +74,7 @@ const Dashboard = () => {
       <input
         type="text"
         placeholder="search service"
-        className="input"
+        className="searchService"
         onChange={onServiceNameChangeHandler}
       ></input>
       <table>
