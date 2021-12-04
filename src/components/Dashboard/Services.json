@@ -19,6 +19,11 @@
             "name": "App 011 Test",
             "status": "UP",
             "url": "http://localhost:8080/app"
+        },
+        {
+            "name": "App 012 Test",
+            "status": "DOWN",
+            "url": "http://localhost:8080/app"
         }
     ]
 }
