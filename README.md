@@ -5,7 +5,7 @@
 - Navigate to project directory 
 - Run npm install
 - Run npm run dev
-  It will launch a UI running in dev server at http://localhost:3000/
+- It will launch a UI running in dev server at http://localhost:3000/
   
 ### Project details
 - This is a dashboard UI for displaying health of various services. It has a login page for admins . On successful login it will display all services
