@@ -14,11 +14,12 @@ th {
 td {
   font-size: 15px;
 }
-.table {
+
+.dashboard{
   margin: 5px;
 }
 
-.searchService {
+.dashboard-search {
   margin-bottom: 5px;
   width: 20%;
   font-family: Helvetica, sans-serif;
@@ -29,7 +30,7 @@ td {
   border: 1px solid black;
 }
 
-.greenStatus {
+.green-status {
   height: 15px;
   width: 15px;
   background-color: green;
@@ -37,7 +38,7 @@ td {
   display: inline-block;
 }
 
-.redStatus {
+.red-status {
   height: 15px;
   width: 15px;
   background-color: red;

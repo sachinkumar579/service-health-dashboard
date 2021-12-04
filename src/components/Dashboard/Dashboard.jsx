@@ -18,11 +18,11 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="table">
+    <div className="dashboard">
       <input
         type="text"
         placeholder="search service"
-        className="searchService"
+        className="dashboard-search"
         onChange={onServiceNameChangeHandler}
       ></input>
       <table>
@@ -47,9 +47,9 @@ const Dashboard = () => {
                 <td>{data.name}</td>
                 <td>
                   {data.status === "UP" ? (
-                    <span className="greenStatus"></span>
+                    <span className="green-status"></span>
                   ) : (
-                    <span className="redStatus"></span>
+                    <span className="red-status"></span>
                   )}
                 </td>
                 <td>{data.url}</td>

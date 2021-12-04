@@ -40,7 +40,7 @@ const Login = ({ setToken }) => {
           onConfirm={errorHandler}
         ></ErrorModal>
       )}
-      <div className="loginForm">
+      <div className="login">
         <form onSubmit={handleSubmit}>
           <p> User name </p>
           <input
@@ -54,7 +54,7 @@ const Login = ({ setToken }) => {
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           ></input>
-          <button type="submit" className="loginButton">
+          <button type="submit" className="login-button">
             Log In
           </button>
         </form>

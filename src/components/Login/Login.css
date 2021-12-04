@@ -1,5 +1,5 @@
 
-.loginForm {
+.login {
   width: 350px;
   top: 10%;
   left: 30%;
@@ -7,7 +7,7 @@
   color: rgb(207, 203, 203);
 }
 
-.loginForm p {
+.login p {
   font-size: 20px;
   margin: 15px 0;
   color: black;
@@ -15,7 +15,7 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.loginForm input {
+.login input {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   width: 100%;
@@ -26,11 +26,11 @@
   border: 1px solid #dddfe2;
 }
 
-.loginForm input:focus {
+.login input:focus {
   border: 1px solid blue;
 }
 
-.loginButton {
+.login-button {
   background-color: rgb(91, 62, 250);
   font-size: 24px;
   font-weight: bold;
@@ -44,6 +44,6 @@
   border: none;
 }
 
-.loginButton:hover {
+.login-button:hover {
   opacity: 0.9;
 }
