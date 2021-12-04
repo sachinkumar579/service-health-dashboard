@@ -63,7 +63,7 @@ const Dashboard = () => {
     });
 
     if (event.target.value.trim() === 0) {
-      setServiceName(service);
+      setServiceName(services);
     } else {
       setServiceName(servicesFiltered);
     }
