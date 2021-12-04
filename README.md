@@ -17,4 +17,4 @@
   - Login - Simple login form . Login works only with admin credentials . Authentication will be added next  
   - Modals - This is for displaying dialog box . Contains error dialog for Login page
   - UI - Contains custom built elements and other default styling to be applied in the page
-- The UI is published using Github pages - https://sachinkumar579.github.io/service-health-dashboard/dist/ 
+- The UI is published using Github Actions - https://sachinkumar579.github.io/service-health-dashboard/dist/ 
