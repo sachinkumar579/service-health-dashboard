@@ -19,7 +19,7 @@ const AppUsageChart =(props)=> {
    
   </LineChart>
   
-  <label style={{justifyContent:"center"}}>{props.service.name}</label>
+  <label style={{justifyContent:"center"}}>{props.service.name} (Total number of requests/ day) </label>
   </div>
 }
 
