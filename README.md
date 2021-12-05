@@ -17,4 +17,5 @@
   - Login - Simple login form . Login works only with admin credentials . Authentication will be added next  
   - Modals - This is for displaying dialog box . Contains error dialog for Login page
   - UI - Contains custom built elements and other default styling to be applied in the page
+  - Charts - Contains charts for displaying service data. Built using Recharts library https://recharts.org/ 
 - The UI is published using Github Actions - https://sachinkumar579.github.io/service-health-dashboard/dist/ 
