@@ -20,3 +20,4 @@
   - Charts - Contains charts for displaying service usage history. Built using Recharts library https://recharts.org/ 
 - Service.json - Contains all service data for display. This must be replaced with Health Check APIs to get current running status of services 
 - The UI is published using Github Actions - https://sachinkumar579.github.io/service-health-dashboard/dist/ 
+- Login credentials - admin and admin 
