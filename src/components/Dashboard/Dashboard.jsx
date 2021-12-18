@@ -5,15 +5,15 @@ import services from './Services.json' // This data should come from a REST API 
 
 const Dashboard = () => {
   const [serviceData, setServiceName] = useState(services.data);
-  const [displayServiceState,setDisplayServiceState] = useState()
-  
-  const displayChart =(event)=>{ 
-       let serviceData = services.data;
-       serviceData.forEach((item)=>{
-              if(item.name===event.currentTarget.cells[1].textContent){
-                setDisplayServiceState(item);
-              }
-       })
+  const [displayServiceState, setDisplayServiceState] = useState()
+
+  const displayChart = (event) => {
+    let serviceData = services.data;
+    serviceData.forEach((item) => {
+      if (item.name === event.currentTarget.cells[1].textContent) {
+        setDisplayServiceState(item);
+      }
+    })
   }
 
 
@@ -70,7 +70,7 @@ const Dashboard = () => {
           )}
         </tbody>
       </table>{
-       displayServiceState!=null && <AppUsageChart service={displayServiceState}></AppUsageChart> 
+        displayServiceState != null && <AppUsageChart service={displayServiceState}></AppUsageChart>
       }
     </div>
   );
